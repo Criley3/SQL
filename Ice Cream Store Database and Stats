@@ -1,0 +1,23 @@
+/** Ice Cream Shop **/  
+
+CREATE TABLE Ice_Cream (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, Rating INTEGER);
+
+
+INSERT INTO Ice_Cream VALUES (1, "Chocolate", 1.99, 5, 7); 
+INSERT INTO Ice_Cream VALUES (2, "Vanilla", 1.99,  7, 9);
+INSERT INTO Ice_Cream VALUES (3, "Chocolate Chip", 2.49, 10, 5);
+INSERT INTO Ice_Cream VALUES (4, "Moose Tracks", 2.49, 15, 2); 
+INSERT INTO Ice_CREAM VALUES (5, "Mint Chocolate Chip", 2.99, 8, 1);
+INSERT INTO Ice_Cream VALUES (6, "Strawberry", 1.99, 20, 10); 
+INSERT INTO Ice_Cream VALUES (7, "Chocolate Chip Cookie Dough", 2.49, 15, 4); 
+INSERT INTO Ice_Cream VALUES (8, "Peach Sherbert", 2.99, 10, 8); 
+INSERT INTO Ice_Cream VALUES (9, "Cookies and Cream",2.99, 22, 3);
+INSERT INTO Ice_Cream VALUES (10, "Hot Fudge", 2.49, 17, 6); 
+
+--Display database ordered by price. 
+SELECT * FROM Ice_Cream
+ORDER BY price desc; 
+
+--What is the highest rated item?
+SELECT * FROM Ice_Cream 
+ORDER BY Rating;
