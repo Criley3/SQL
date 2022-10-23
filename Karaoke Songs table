@@ -22,7 +22,10 @@ INSERT INTO songs (title, artist, mood, duration, released)
     VALUES ("Sweet Caroline", "Neil Diamond", "happy", 201, 1969);
 INSERT INTO songs (title, artist, mood, duration, released)
     VALUES ("Call me maybe", "Carly Rae Jepsen", "happy", 193, 2011);
-    
+
+
+-- Filtering to show songs where the mood is described as "epic", it is released after 1990 and less than 4 minutes long. --
+
 SELECT title FROM songs; 
 SELECT title FROM songs WHERE mood = "epic" OR released > 1990;
 SELECT title FROM songs WHERE mood = "epic" AND released > 1990 AND duration < 240;
