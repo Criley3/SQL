@@ -57,6 +57,7 @@ INSERT INTO songs (artist, title)
 INSERT INTO songs (artist, title)
     VALUES ("Guns N' Roses", "Don't cry");
     
+-- Filtering to show a specific artist, any pop artists and then selecting songs from the artists that are pop. -- 
 
 SELECT title FROM songs WHERE artist = "Queen";
 SELECT name FROM artists WHERE genre = "Pop"; 
