@@ -1,8 +1,8 @@
 /** Ice Cream Shop **/  
-
+```creating table for ice cream store```
 CREATE TABLE Ice_Cream (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, Rating INTEGER);
 
-
+```Here I inserted the differnet types of ice cream``` 
 INSERT INTO Ice_Cream VALUES (1, "Chocolate", 1.99, 5, 7); 
 INSERT INTO Ice_Cream VALUES (2, "Vanilla", 1.99,  7, 9);
 INSERT INTO Ice_Cream VALUES (3, "Chocolate Chip", 2.49, 10, 5);
@@ -14,10 +14,12 @@ INSERT INTO Ice_Cream VALUES (8, "Peach Sherbert", 2.99, 10, 8);
 INSERT INTO Ice_Cream VALUES (9, "Cookies and Cream",2.99, 22, 3);
 INSERT INTO Ice_Cream VALUES (10, "Hot Fudge", 2.49, 17, 6); 
 
---Display database ordered by price. 
+```Display data from database ordered by price``` 
+
 SELECT * FROM Ice_Cream
 ORDER BY price desc; 
 
---What is the highest rated item?
+```What is the highest rated item?```
+
 SELECT * FROM Ice_Cream 
 ORDER BY Rating;
