@@ -1,0 +1,26 @@
+CREATE TABLE arcade_games (
+    game_id INTEGER, 
+    game_title INTEGER, 
+    high_score TEXT); 
+    
+INSERT INTO arcade_games (game_id, game_title, high_score)
+VALUES 
+    (1, "pacman", 5000),
+    (2, "snake", 4200), 
+    (3, "rally race", 2000),
+    (4, "street fighter", 1500);
+SELECT * FROM arcade_games;
+
+UPDATE arcade_games SET high_score = "6500"
+WHERE game_id = 1; 
+
+SELECT * FROM arcade_games;
+
+UPDATE arcade_games SET high_score = "2700"
+WHERE game_id = 4; 
+
+SELECT * FROM arcade_games;
+
+DELETE FROM arcade_games WHERE game_id = 2;
+
+SELECT * FROM arcade_games; 
